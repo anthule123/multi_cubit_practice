@@ -8,11 +8,9 @@ class CounterCubit extends Cubit<CounterState> {
 
   void increment() {
     state.value++;
-    emit(state);
   }
 
   void decrement() {
     state.value--;
-    emit(state);
   }
 }

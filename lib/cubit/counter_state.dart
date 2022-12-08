@@ -6,6 +6,7 @@ class CounterState {
   CounterState({
     required this.value,
   });
+
 }
 
 class CounterInitial extends CounterState {

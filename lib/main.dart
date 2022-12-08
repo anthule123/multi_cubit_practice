@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
               builder: (context, state) {
                 if (state.value < 0) {
                   return Text(
-                    'BRR, NEGATIVE ' + state.value.toString(),
+                    'BRR, NEGATIVE ' + state.toString(),
                     style: Theme.of(context).textTheme.headline4,
                   );
                 } else if (state.value % 2 == 0) {
@@ -98,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     'YAAAY ' + state.value.toString(),
                     style: Theme.of(context).textTheme.headline4,
                   );
-                } else if (state.value == 5) {
+                } else if (state == 5) {
                   return Text(
                     'HMM, NUMBER 5',
                     style: Theme.of(context).textTheme.headline4,
